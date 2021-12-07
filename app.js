@@ -1,7 +1,11 @@
 const button = document.querySelector("#changeColor");
 const container = document.querySelector("#container");
-button.addEventListener("click", function () {
+button.addEventListener("click", function (e) {
   container.style.backgroundColor = makeRandColor();
+  e.stopPropagation();
+});
+container.addEventListener("click", function () {
+  container.classList.toggle("hide");
 });
 
 const makeRandColor = () => {
