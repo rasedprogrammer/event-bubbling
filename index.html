@@ -8,6 +8,16 @@
   </head>
   <body>
     <h1>Event Bubbling</h1>
-    <button onclick="alert('Click Event')">Click</button>
+    <section onclick="alert('Section Click')">
+      <p onclick="alert('Paragarph Click')">
+        This is a paragarph -
+        <button onclick="alert('Click Button')">Click</button>
+      </p>
+    </section>
+    <!-- <p onclick="alert('Paragarph Click')">
+      This is a paragarph -
+      <button onclick="alert('Click Button')">Click</button>
+    </p> -->
+    <!-- <button onclick="alert('Click Event')">Click</button> -->
   </body>
 </html>
